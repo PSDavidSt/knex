@@ -3,7 +3,7 @@ import unittest
 
 from jsonschema import ValidationError
 
-from resources.json.manifest_validator import ManifestValidator
+from manifest_validator import ManifestValidator
 
 DIR = os.path.dirname(os.path.abspath(__file__))
 JSON_DIR = os.path.abspath(os.path.join(DIR, os.pardir))
@@ -16,11 +16,11 @@ class TestManifestSchema(unittest.TestCase):
             self.validator = ManifestValidator(schema)
 
     def test_schema_ok(self):
-        with open("manifest.json") as manifest:
+        with open(os.path.join(os.path.dirname(__file__), "manifest.json")) as manifest:
             self.assertEqual(None, self.validator.validate_manifest(manifest))
 
     def test_schema_empty(self):
-        with open("manifest2.json") as manifest:
+        with open(os.path.join(os.path.dirname(__file__), "manifest2.json")) as manifest:
             self.assertRaises(ValidationError, self.validator.validate_manifest(manifest))
 
 
