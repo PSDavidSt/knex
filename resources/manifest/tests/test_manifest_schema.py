@@ -3,7 +3,7 @@ import unittest
 
 from jsonschema import ValidationError
 
-from manifest_validator import ManifestValidator
+from manifest.validator.manifest_validator import ManifestValidator
 
 DIR = os.path.dirname(os.path.abspath(__file__))
 JSON_DIR = os.path.abspath(os.path.join(DIR, os.pardir))
