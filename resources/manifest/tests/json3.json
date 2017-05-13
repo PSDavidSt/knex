@@ -1,0 +1,34 @@
+{
+   "title": "Impact of the search-by-tag feature on listening time",
+   "authors": [
+      {
+         "name": "Max Müller", "email": "max.mueller@soundcloud.com"
+      }
+   ],
+   "teams": [
+      {
+         "name": "Data Science Core"
+      },
+      {
+         "name": "Data Science Listener"
+      }
+   ],
+   "status": "in_progress",
+   "description": "This analysis studies the impact of the new “search-by-tag”
+feature on listening time on Android. The results show a positive
+overall impact and that there is cannabalism between the new
+“search-by-tag” feature and the playlist filter on the search
+results page.
+In detail: No impact on number of likes, but small positive impact on listening time. When looking at feature level, we observe that users use the search-by-tag feature instead of search (cannibalism).",
+   "hypothesis": "",
+   "future_work": "We recommend to run another experiment that investigates how the feature would perform when directly integrated into search.",
+   "tags": [ "search", "a/b test", "search-by-tag" ],
+   "dependencies": [
+      {
+         "project_id": "1"
+      },
+      {
+         "project_id": "2"
+      }
+   ]
+}

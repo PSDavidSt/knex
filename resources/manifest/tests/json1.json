@@ -1,0 +1,63 @@
+# JSON 1:
+{
+   "title": "Online Multitasking and User Engagement",
+   "authors": [
+      {
+         "name": "Janette Lehmann", "email": "jnt.lehmann@gmail.com"
+      },
+      {
+         "name": "Mounia Lalmas", "email": "m.m@example.com"
+      }
+   ],
+   "teams": [
+      {
+         "name": "Yahoo Collaboration"
+      }
+   ],
+   "status": "done",
+   "description": "Users often access and re-access more than one site during
+      an online session, effectively engaging in multitasking. In
+      this paper, we study the effect of online multitasking on
+      two widely used engagement metrics designed to capture
+      users browsing behavior with a site. Our study is based
+      on browsing data of 2.5M users across 760 sites encompassing
+      diverse types of services such as social media, news and
+      mail. To account for multitasking we need to redefine how
+      user sessions are represented and we need to adapt the metrics
+      under study. We introduce a new representation of user
+      sessions: tree-streams – as opposed to the commonly used
+      click-streams – present a more accurate picture of the browsing
+      behavior of a user that includes how users switch between
+      sites (e.g., hyperlinking, teleporting, backpaging). We then
+      discuss a number of insights on multitasking patterns, and
+      show how these help to better understand how users engage
+      with sites. Finally, we define metrics that characterize multitasking
+      during online sessions and show how they provide
+      additional insights to standard engagement metrics.",
+   "hypothesis": "",
+   "future_work": "Our next steps are two-fold. First, our definition
+      of a task is simplistic and should be extended. For
+      example, to book a holiday, a user may visit several sites
+      within the same session and one site many times across
+      several sessions. It will be important to re-align our findings
+      and conclusions with a more general definition of task.
+      Moreover, we need to further study when a user is returning
+      to a site to continue with the same task (continue reading
+      the news articles) or to start a totally different task (a new
+      unrelated information need), as these two cases should be
+      treated differently. Accounting for this will likely lead to
+      more advanced models of user attention to a site, an important
+      research direction to follow. Second, we focused on two
+      metrics used to assess the browsing activity within a visit.
+      We did not consider, for example, bounce or click-through
+      rates. It will be important to extend our study to a larger
+      set of metrics, including those related to other aspect of user
+      engagement, such as loyalty and popularity [11]. In addition,
+      the concept of page view is not well defined with dynamic
+      changes to a web page such as in Ajax, so we would like to
+      address this issue too. Finally, we did not take user demographics
+      into account and how multitasking on sites differ
+      in different countries.",
+   "tags": [ "user engagement", "online multitasking", "teleporting" ],
+   "dependencies": [ ]
+}

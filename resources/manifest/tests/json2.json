@@ -1,0 +1,56 @@
+# JSON 2:
+{
+   "title": "Networked User Engagement",
+   "authors": [
+      {
+         "name": "Janette Lehmann", "email": "jnt.lehmann@gmail.com"
+      }
+   ],
+   "teams": [
+      {
+         "name": "Yahoo Collaboration"
+      }
+   ],
+   "status": "in_review",
+   "description": "Online providers frequently offer a variety of services, ranging
+from news to mail. These providers endeavour to keep
+users accessing and interacting with the sites offering these
+services, that is to engage users by spending time on these
+sites and returning regularly to them. The standard approach
+to evaluate engagement with a site is by measuring
+engagement metrics of each site separately. However, when
+assessing engagement within a network of sites, it is crucial
+to take into account the traffic between sites. This paper
+proposes a methodology for studying networked used engagement.
+We represent sites (nodes) and user traffic (edges) between
+them as a network, and apply complex network metrics
+to study networked user engagement. We demonstrate
+the value of these metrics when applied to 728 services offered
+by Yahoo! with a sample of 2M users and a total of
+25M online sessions.",
+   "hypothesis": "",
+   "future_work": "We did not apply complex networks metrics that calculate
+the centrality of nodes. These metrics can bring further insights
+in networked user engagement, and in particular when
+compared and combined with engagement metrics (such as
+those listed in the introduction). We also did not differentiate
+between the ways users navigate between services,
+whether clicking on a link, using the back button, or using a
+bookmark. We can build additional types of networks where,
+for instance, two sites are connected if there are web links
+between them. The same methodology can bring insights
+into how web links influence networked user engagement.
+Finally, the source of the traffic (e.g. users that come from
+a news or social media site) and its effect on networked user
+engagement is something that is important to investigate.
+Our ultimate aim is to understand how a network of sites
+and the traffic between sites can be optimised to “better”
+engage users. The methodology presented in this paper constitutes
+the first step towards achieving this aim.",
+   "tags": [ "user engagement", "networks of sites", "metrics", "web traffic" ],
+   "dependencies": [
+      {
+         "project_id": "1"
+      }
+   ]
+}

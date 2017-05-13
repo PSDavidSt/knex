@@ -7,19 +7,11 @@
   "properties": {
     "project": {
       "type": "object",
-      "required": ["title", "url", "authors", "description","date_creation", "date_last_updated"],
+      "required": ["title", "authors", "description","date_creation", "date_last_updated"],
       "properties": {
 
         "title": {
           "type": "string"
-        },
-        "url": {
-          "type": "string",
-          "format":"url"
-        },
-        "git_url": {
-          "type": "string",
-          "format":"url"
         },
         "authors":{
           "type": "array",
@@ -33,10 +25,7 @@
           "type": "object",
           "$ref": "#/definitions/analysis"
         },
-        "hypothesis":{
-          "type": "string"
-        },
-        "team":{
+        "teams":{
           "type": "object",
           "$ref": "#/definitions/team"
         },
@@ -119,7 +108,7 @@
       "name": "string",
       "url":{"type":"string", "format": "url"},
       "git_url":{"type":"string", "format": "url"},
-      "description": "string"
+      "descriptions": "string"
     }
   }
 
