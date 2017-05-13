@@ -19,10 +19,6 @@ class TestManifestSchema(unittest.TestCase):
         with open(os.path.join(os.path.dirname(__file__), "manifest.json")) as manifest:
             self.assertEqual(None, self.validator.validate_manifest(manifest))
 
-    def test_schema_empty(self):
-        with open(os.path.join(os.path.dirname(__file__), "manifest2.json")) as manifest:
-            self.assertRaises(ValidationError, self.validator.validate_manifest(manifest))
-
 
 if __name__ == '__main__':
     unittest.main()
