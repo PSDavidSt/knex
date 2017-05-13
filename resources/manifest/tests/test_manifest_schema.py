@@ -24,7 +24,7 @@ class TestManifestSchema(unittest.TestCase):
             self.assertRaises(ValidationError, self.validator.validate_manifest(manifest))
 
     def test_schema_invalidDate(self):
-        with open("manisfest3.json") as manifest:
+        with open("manifest3.json") as manifest:
             self.assertRaises(ValidationError, self.validator.validate_manifest(manifest))
 
     def test_schema_invalidURL(self):
