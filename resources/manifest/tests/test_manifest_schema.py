@@ -19,6 +19,27 @@ class TestManifestSchema(unittest.TestCase):
         with open(os.path.join(os.path.dirname(__file__), "manifest.json")) as manifest:
             self.assertEqual(None, self.validator.validate_manifest(manifest))
 
+    def test_schema_empty(self):
+        with open("manifest2.json") as manifest:
+            self.assertRaises(ValidationError, self.validator.validate_manifest(manifest))
+
+    def test_schema_invalidDate(self):
+        with open("manisfest3.json") as manifest:
+            self.assertRaises(ValidationError, self.validator.validate_manifest(manifest))
+
+    def test_schema_invalidURL(self):
+        with open("manifest4.json") as manifest:
+            self.assertRaises(ValidationError, self.validator.validate_manifest(manifest))
+
+    def test_schema_invalidEmail(self):
+        with open("manifest5.json") as manifest:
+            self.assertRaises(ValidationError, self.validator.validate_manifest(manifest))
+
+    def test_schema_invalidJSON(self):
+        with open("manifest6.json") as manifest:
+            self.assertRaises(ValidationError, self.validator.validate_manifest(manifest))
+
+
 
 if __name__ == '__main__':
     unittest.main()
