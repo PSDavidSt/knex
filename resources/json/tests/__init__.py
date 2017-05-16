@@ -40,6 +40,9 @@ class TestManifestSchema(unittest.TestCase):
         with open("manifest6.json") as manifest:
             self.assertRaises(ValidationError, self.validator.validate_manifest(manifest))
 
+    def test_schema_fileNotFound(self):
+        with open("2.json") as manifest:
+            self.assertRaises(FileNotFoundError, self.validator.validate_manifest(manifest))
 
 
 if __name__ == '__main__':
