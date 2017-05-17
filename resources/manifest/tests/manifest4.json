@@ -41,12 +41,7 @@
     ],
     "future_work":
     [
-      {
-        "title": "this is something related to this work",
-        "author": "the_author_of_this_awesome_work",
-        "email": "email@example.com",
-        "description": "some description of the work that will be done in the future"
-      }
+      "some description of the work that will be done in the future"
     ],
     "related_projects":
     [
