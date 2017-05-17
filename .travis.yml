@@ -17,4 +17,4 @@ services:
   - docker
 
 script:
-    - python py.test
+    - py.test
