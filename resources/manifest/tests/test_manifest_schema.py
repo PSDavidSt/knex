@@ -16,27 +16,31 @@ class TestManifestSchema(unittest.TestCase):
             self.validator = ManifestValidator(schema)
 
     def test_schema_ok(self):
-        with open(os.path.join(os.path.dirname(__file__), "manifest.json")) as manifest:
+        with open(os.path.join(os.path.dirname(__file__), "manifest.json5")) as manifest:
+            self.assertEqual(None, self.validator.validate_manifest(manifest))
+
+    def test_schema2_ok(self):
+        with open(os.path.join(os.path.dirname(__file__), "json1.json5")) as manifest:
             self.assertEqual(None, self.validator.validate_manifest(manifest))
 
     def test_schema_empty(self):
-        with open(os.path.join(os.path.dirname(__file__), "manifest2.json")) as manifest:
+        with open(os.path.join(os.path.dirname(__file__), "manifest2.json5")) as manifest:
             self.assertRaises(ValidationError, self.validator.validate_manifest(manifest))
 
     def test_schema_invalidDate(self):
-        with open(os.path.join(os.path.dirname(__file__), "manifest3.json")) as manifest:
+        with open(os.path.join(os.path.dirname(__file__), "manifest3.json5")) as manifest:
             self.assertRaises(ValidationError, self.validator.validate_manifest(manifest))
 
     def test_schema_invalidURL(self):
-        with open(os.path.join(os.path.dirname(__file__), "manifest4.json")) as manifest:
+        with open(os.path.join(os.path.dirname(__file__), "manifest4.json5")) as manifest:
             self.assertRaises(ValidationError, self.validator.validate_manifest(manifest))
 
     def test_schema_invalidEmail(self):
-        with open(os.path.join(os.path.dirname(__file__), "manifest5.json")) as manifest:
+        with open(os.path.join(os.path.dirname(__file__), "manifest5.json5")) as manifest:
             self.assertRaises(ValidationError, self.validator.validate_manifest(manifest))
 
     def test_schema_invalidJSON(self):
-        with open(os.path.join(os.path.dirname(__file__),"manifest6.json")) as manifest:
+        with open(os.path.join(os.path.dirname(__file__),"manifest6.json5")) as manifest:
             self.assertRaises(ValidationError, self.validator.validate_manifest(manifest))
 
 
