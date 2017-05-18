@@ -189,7 +189,3 @@ In detail: No impact on number of likes, but small positive impact on listening 
    ]
 }
 
-date_imported -> selber anlegen
-date_pub -> wann repo
-"date_updated" -> optional
-url vll mehrere

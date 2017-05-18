@@ -66,13 +66,13 @@
         "future_work": {
           "type": "array",
           "items":{
-            "$ref": "#/definitions/future_work"
+            "type": "string"
           }
         },
         "realated_projects": {
           "type": "array",
           "items":{
-            "project": {"$ref": "#/definitions/future_work"}
+            "project": {"$ref": "#/definitions/related_project"}
           }
         }
       }
@@ -119,8 +119,20 @@
         "$ref": "#/definitions/user"
       }
     },
-    "future_work": {
-      "type": "string"
+    "related_project": {
+      "type": "object",
+      "properties":{
+        "title":{
+          "type": "string"
+        },
+        "url":{
+          "type":"string",
+          "format": "url"
+        },
+        "id":{
+          "type":"string"
+        }
+      }
     }
   }
 }

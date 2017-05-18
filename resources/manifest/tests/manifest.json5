@@ -22,9 +22,9 @@
     },
     "status": "DONE",
     "description": "can this be a multiline description?",
-    "date_creation": "1970-01-01",
-    "date_updated": "2017-05-11",
-    "date_pub": "2017-05-11",
+    "date_creation": "1970-01-01", /* the date the project was added to the knex repo*/
+    "date_updated": "2017-05-11", /* the last date some one edited the original git repo */
+    "date_pub": "2017-05-11", /* the date the gitrepo was created */
     "tags":
     [
       "tag",
@@ -32,12 +32,7 @@
     ],
     "future_work":
     [
-      {
-        "title": "this is something related to this work",
-        "author": "the_author_of_this_awesome_work",
-        "email": "email@example.com",
-        "description": "some description of the work that will be done in the future"
-      }
+        "some info on future work"
     ],
     "related_projects":
     [
