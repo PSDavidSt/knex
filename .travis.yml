@@ -17,4 +17,4 @@ services:
   - docker
 
 script:
-    - py.test
+    - nosetests
